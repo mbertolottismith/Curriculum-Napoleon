@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+   }
+   html {
+    font-family: 'Oswald', sans-serif;
+    background: #B4202A 
+    }
+   header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+   }
+   header div {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   }
+   header div h1 {
+    line-height: 1;
+   }
+    header nav {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+   }
+   header nav ul :hover {
+    color: white;
+    font-size: 1.7rem;
+   }
+   header nav ul :visited {
+    color: rgba(255, 255, 255, 0.616);
+   }
+   header nav ul :link {
+    color: rgba(255, 255, 255, 0.616);
+   }
+   header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-decoration: white;
+   }
+   header nav ul li a {
+    text-decoration: white;
+    font-size: 1.5rem;
+   }  
+   section {
+    background-image: url("imagenes/riverfondo.jpg");
+   }
+
+   /*PRIMARIO*/
+
+   .primario {
+    display: flex;
+    justify-content: center;
+   }
+   .linea {
+    border-left: 3px solid;
+    width: 3%;
+    margin-right: 3%;
+    color: solid #0000
+   }
+   .redes div {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+   }
+   .redes h3 {
+    text-align: center;
+   }
+   .redes img {
+    width: 10%;
+   }
+ 
+   .estudios div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .estudios h3 {
+    text-align: center;
+   }
+
+   .estudios div img {
+    width: 3%;
+   }
+
+   
+   .idiomas div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+   }
+   .idiomas div img {
+    width: 5%;
+   }
+
+   .idiomas h3 {
+    text-align: center;
+   }
+   .idiomas div p {
+    margin-right: 3%;
+   }
+   
+    /*EXPERIENCIA*/
+    .linaexp {
+        width: 80%;
+        border-bottom: 3px solid;
+        color: white;
+    }
+    .exptecnico {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .exptecnico article{
+        display: flex;
+        padding-bottom: 2%;
+        width: 80%; 
+    }
+    .exptecnico article div {
+        align-items: center;
+        width: 33%;
+        margin-left: 13%;
+    }
+    .exptecnico h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .exptecnico article img {
+        width: 20%;
+        margin-right: 2%;
+    }
+    .exptecnico article div {
+        display: flex;
+    }
+
+    .titulosexp {
+        display: flex;
+        margin-bottom: 3%;
+        width: 80%;
+        justify-content: space-around;
+    }
+    .titulosexp div {
+        width: 33%;
+        text-align: center;
+    }
+
+
+    h1 {
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 2rem;
+        margin: 3%;
+    }
+    h4 {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    
+
+    /*LOGROS*/
+    .logrosdestacados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 3%;
+    }
+    .logrosdestacados article {
+        display: flex;
+        align-items: center;
+        margin-left: 13%;
+    }
+    .logrosdestacados article img {
+        width: 15%;
+        margin: 1%;
+    }
+    .logrosdestacados article p {
+        width: 100%;
+    }
+
+    /*FOOTER*/
+    footer {
+        background-color: black;
+        display: flex;
+        justify-content: space-between; 
+        width: 100%;
+    }
+    footer img {
+        width: 20%;
+    }
+    
+    
+    
+    @media screen and (max-width: 580px) {
+        
+        header div img {
+            width: 90%;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 1.7rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin: 3%;
+        }
+        h4 {
+            font-size: 1.3rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        
+        .idiomas div img {
+            width: 10%;
+        }
+        .primario {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .primario article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        header nav ul li a {
+            text-decoration: white;
+            font-size: 1.2rem;
+           }
+           header nav ul :active {
+            color: white;
+            font-size: 1.5rem;
+           }
+        .redes div {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .exptecnico article {
+            width: 100%;
+            margin-left: 0%;
+        }
+        .exptecnico article img {
+            width: 30%;
+            margin-right: 2%;
+        }
+        
+        .logrosdestacados article {
+            width: 40%;
+        }
+        .logrosdestacados article img {
+            width: 30%;
+        }
+    
+    }
+    
+    @media screen and (max-width: 768px) {
+        .exptecnico article {
+            width: 100%;
+            margin-left: 0%;
+        }
+        .exptecnico article img {
+            width: 30%;
+            margin-right: 2%;
+        }
+    }
+
+
